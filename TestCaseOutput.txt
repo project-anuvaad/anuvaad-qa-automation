@@ -1,0 +1,6 @@
+Login==>test1_login_with_correct_credentials,PASSED
+Login==>test2_login_with_incorrect_credentials,PASSED
+Login==>test3_click_on_forgot_password,PASSED
+Login==>test4_click_on_sign_up,PASSED
+Login==>test5_login_with_admin_credentials,PASSED
+
