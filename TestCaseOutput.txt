@@ -1,6 +1,20 @@
+AdminMenu==>test1_click_on_user_details,PASSED
+AdminMenu==>test2_click_on_my_profile,PASSED
+AdminMenu==>test3_click_on_logout,PASSED
+ForgotPassword==>test1_incorrect_email_format,PASSED
+ForgotPassword==>test2_correct_email_format,PASSED
 Login==>test1_login_with_correct_credentials,PASSED
 Login==>test2_login_with_incorrect_credentials,PASSED
 Login==>test3_click_on_forgot_password,PASSED
 Login==>test4_click_on_sign_up,PASSED
 Login==>test5_login_with_admin_credentials,PASSED
+SignUp==>test1_new_credentials,PASSED
+SignUp==>test2_existing_credentials,PASSED
+SignUp==>test3_incorrect_email,PASSED
+SignUp==>test4_password_format,PASSED
+SignUp==>test5_click_on_login,PASSED
+UserMenu==>test1_click_on_translate_sentence,PASSED
+UserMenu==>test2_click_on_translate_document,PASSED
+UserMenu==>test3_click_on_my_profile,PASSED
+UserMenu==>test4_click_on_logout,PASSED
 

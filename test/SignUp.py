@@ -2,12 +2,12 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-
+import config
 
 class SignUp(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r'/home/roshan/Downloads/chromedriver')
-        self.driver.get("https://developers.anuvaad.org/signup")
+        self.driver = webdriver.Chrome(config.chrome_driver_path)
+        self.driver.get(config.signup_url)
         self.driver.maximize_window()
         self.firstname = self.driver.find_element_by_id("first-name")
         self.email = self.driver.find_element_by_id("email")
@@ -32,6 +32,8 @@ class SignUp(unittest.TestCase):
                 print("SignUp==>test1_new_credentials,PASSED")
             else:
                 print("SignUp==>test1_new_credentials,FAILED")
+        except Exception as e:
+            print("SignUp==>test1_new_credentials,FAILED")
         finally:
             self.driver.quit()
 
@@ -50,6 +52,8 @@ class SignUp(unittest.TestCase):
                 print("SignUp==>test2_existing_credentials,PASSED")
             else:
                 print("SignUp==>test2_existing_credentials,FAILED")
+        except Exception as e:
+            print("SignUp==>test2_existing_credentials,FAILED")
         finally:
             self.driver.quit()
 
@@ -68,6 +72,8 @@ class SignUp(unittest.TestCase):
                 print('SignUp==>test3_incorrect_email,PASSED')
             else:
                 print('SignUp==>test3_incorrect_email,FAILED')
+        except Exception as e:
+            print("SignUp==>test3_incorrect_email,FAILED")
         finally:
             self.driver.quit()
 
@@ -86,19 +92,22 @@ class SignUp(unittest.TestCase):
                 print('SignUp==>test4_password_format,PASSED')
             else:
                 print('SignUp==>test4_password_format,FAILED')
-
+        except Exception as e:
+            print("SignUp==>test4_password_format,FAILED")
         finally:
             self.driver.quit()
 
     def test5_click_on_login(self):
         try:
             self.login.click()
-            expected_url = "https://developers.anuvaad.org/#"
+            expected_url = config.login_url + '#'
             login_page = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if login_page:
                 print("SignUp==>test5_click_on_login,PASSED")
             else:
                 print("SignUp==>test5_click_on_login,FAILED")
+        except Exception as e:
+            print("SignUp==>test5_click_on_login,FAILED")
         finally:
             self.driver.quit()
 
