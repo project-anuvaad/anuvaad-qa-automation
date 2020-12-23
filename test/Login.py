@@ -2,6 +2,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import config
+import os
 
 
 class Login(unittest.TestCase):
@@ -23,9 +24,9 @@ class Login(unittest.TestCase):
             expected_url = config.view_document_url
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
-                print("Login==>test1_login_with_correct_credentials,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_login_with_user_credentials"),PASSED')
         except Exception as e:
-            print("Login==>test1_login_with_correct_credentials,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_login_with_user_credentials"),FAILED')
         finally:
             self.driver.quit()
 
@@ -36,9 +37,9 @@ class Login(unittest.TestCase):
             self.signin.click()
             actual_msg = WebDriverWait(self.driver, 20).until(lambda driver: driver.find_element_by_id("client-snackbar"))
             if actual_msg:
-                print("Login==>test2_login_with_incorrect_credentials,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_login_with_incorrect_credentials"),PASSED')
         except Exception as e:
-            print("Login==>test2_login_with_incorrect_credentials,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_login_with_incorrect_credentials"),FAILED')
         finally:
             self.driver.quit()
 
@@ -48,9 +49,9 @@ class Login(unittest.TestCase):
             expected_url = config.forgot_password_url + '#'
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
-                print("Login==>test3_click_on_forgot_password,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_forgot_password"),PASSED')
         except Exception as e:
-            print("Login==>test3_click_on_forgot_password,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_forgot_password"),FAILED')
         finally:
             self.driver.quit()
 
@@ -60,9 +61,9 @@ class Login(unittest.TestCase):
             expected_url = config.signup_url + '#'
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
-                print("Login==>test4_click_on_sign_up,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_click_on_sign_up"),PASSED')
         except Exception as e:
-            print("Login==>test4_click_on_sign_up,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_click_on_sign_up"),FAILED')
         finally:
             self.driver.quit()
 
@@ -74,9 +75,9 @@ class Login(unittest.TestCase):
             expected_url = config.user_details_url
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
-                print("Login==>test5_login_with_admin_credentials,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test5_login_with_admin_credentials"),PASSED')
         except Exception as e:
-            print("Login==>test5_login_with_admin_credentials,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test5_login_with_admin_credentials"),FAILED')
         finally:
             self.driver.quit()
 

@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import config
+import os
+
 
 class SignUp(unittest.TestCase):
     def setUp(self):
@@ -29,11 +31,11 @@ class SignUp(unittest.TestCase):
             actual_msg = WebDriverWait(self.driver, 20)\
                 .until(lambda driver: driver.find_element_by_id("client-snackbar").text)
             if expected_msg == actual_msg:
-                print("SignUp==>test1_new_credentials,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_new_credentials"),PASSED')
             else:
-                print("SignUp==>test1_new_credentials,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_new_credentials"),FAILED')
         except Exception as e:
-            print("SignUp==>test1_new_credentials,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_new_credentials"),FAILED')
         finally:
             self.driver.quit()
 
@@ -49,11 +51,11 @@ class SignUp(unittest.TestCase):
             actual_msg = WebDriverWait(self.driver, 20)\
                 .until(lambda driver: driver.find_element_by_id("client-snackbar").text)
             if expected_msg == actual_msg:
-                print("SignUp==>test2_existing_credentials,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_existing_credentials"),PASSED')
             else:
-                print("SignUp==>test2_existing_credentials,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_existing_credentials"),FAILED')
         except Exception as e:
-            print("SignUp==>test2_existing_credentials,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_existing_credentials"),FAILED')
         finally:
             self.driver.quit()
 
@@ -69,11 +71,11 @@ class SignUp(unittest.TestCase):
                 ec.alert_is_present())
             if alert_msg:
                 self.driver.switch_to.alert.accept()
-                print('SignUp==>test3_incorrect_email,PASSED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_incorrect_email"),PASSED')
             else:
-                print('SignUp==>test3_incorrect_email,FAILED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_incorrect_email"),FAILED')
         except Exception as e:
-            print("SignUp==>test3_incorrect_email,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_incorrect_email"),FAILED')
         finally:
             self.driver.quit()
 
@@ -89,11 +91,11 @@ class SignUp(unittest.TestCase):
                 ec.alert_is_present())
             if alert_msg:
                 self.driver.switch_to.alert.accept()
-                print('SignUp==>test4_password_format,PASSED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_password_format"),PASSED')
             else:
-                print('SignUp==>test4_password_format,FAILED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_password_format"),FAILED')
         except Exception as e:
-            print("SignUp==>test4_password_format,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_password_format"),FAILED')
         finally:
             self.driver.quit()
 
@@ -103,11 +105,11 @@ class SignUp(unittest.TestCase):
             expected_url = config.login_url + '#'
             login_page = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if login_page:
-                print("SignUp==>test5_click_on_login,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test5_click_on_login"),PASSED')
             else:
-                print("SignUp==>test5_click_on_login,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test5_click_on_login"),FAILED')
         except Exception as e:
-            print("SignUp==>test5_click_on_login,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test5_click_on_login"),FAILED')
         finally:
             self.driver.quit()
 

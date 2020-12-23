@@ -21,11 +21,12 @@ class UserMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20)\
                 .until(lambda driver: driver.current_url == expected_instant_translate_url)
             if result:
-                print("UserMenu==>test1_click_on_translate_sentence,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_translate_sentence"),PASSED')
             else:
-                print("UserMenu==>test1_click_on_translate_sentence,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_translate_sentence"),FAILED')
         except Exception as e:
-            print("UserMenu==>test1_click_on_translate_sentence,FAILED")
+            print(
+                f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_translate_sentence"),FAILED')
         finally:
             self.login.driver.quit()
 
@@ -39,11 +40,11 @@ class UserMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_translate_document_url)
             if result:
-                print("UserMenu==>test2_click_on_translate_document,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_translate_document"),PASSED')
             else:
-                print("UserMenu==>test2_click_on_translate_document,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_translate_document"),FAILED')
         except Exception as e:
-            print("UserMenu==>test2_click_on_translate_document,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_translate_document"),FAILED')
         finally:
             self.login.driver.quit()
 
@@ -56,11 +57,11 @@ class UserMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_my_profile_url)
             if result:
-                print("UserMenu==>test3_click_on_my_profile,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_my_profile"),PASSED')
             else:
-                print("UserMenu==>test3_click_on_my_profile,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_my_profile"),FAILED')
         except Exception as e:
-            print("UserMenu==>test3_click_on_my_profile,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_my_profile"),FAILED')
         finally:
             self.login.driver.quit()
 
@@ -73,11 +74,11 @@ class UserMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_logout_url)
             if result:
-                print("UserMenu==>test4_click_on_logout,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_click_on_logout"),PASSED')
             else:
-                print("UserMenu==>test4_click_on_logout,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_click_on_logout"),FAILED')
         except Exception as e:
-            print("UserMenu==>test4_click_on_logout,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test4_click_on_logout"),FAILED')
         finally:
             self.login.driver.quit()
 

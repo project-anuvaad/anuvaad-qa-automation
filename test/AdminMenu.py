@@ -2,6 +2,7 @@ import unittest
 from LoginMain import AdminLogin
 from selenium.webdriver.support.ui import WebDriverWait
 import config
+import os
 
 
 class AdminMenu(unittest.TestCase):
@@ -20,11 +21,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20)\
                 .until(lambda driver: driver.current_url == expected_user_details__url)
             if result:
-                print("AdminMenu==>test1_click_on_user_details,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),PASSED')
             else:
-                print("AdminMenu==>test1_click_on_user_details,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED')
         except Exception as e:
-            print("AdminMenu==>test1_click_on_user_details,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED')
         finally:
             self.login.driver.quit()
 
@@ -37,11 +38,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_my_profile_url)
             if result:
-                print("AdminMenu==>test2_click_on_my_profile,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),PASSED')
             else:
-                print("AdminMenu==>test2_click_on_my_profile,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED')
         except Exception as e:
-            print("AdminMenu==>test2_click_on_my_profile,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED')
         finally:
             self.login.driver.quit()
 
@@ -54,11 +55,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_logout_url)
             if result:
-                print("AdminMenu==>test3_click_on_logout,PASSED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),PASSED')
             else:
-                print("AdminMenu==>test3_click_on_logout,FAILED")
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED')
         except Exception as e:
-            print("AdminMenu==>test3_click_on_logout,FAILED")
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED')
         finally:
             self.login.driver.quit()
 
