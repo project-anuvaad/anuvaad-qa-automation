@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as ec
 class SignUp(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r'/home/roshan/Downloads/chromedriver')
-        self.driver.get("http://localhost:3000/signup")
+        self.driver.get("https://developers.anuvaad.org/signup")
         self.driver.maximize_window()
         self.firstname = self.driver.find_element_by_id("first-name")
         self.email = self.driver.find_element_by_id("email")
@@ -93,7 +93,7 @@ class SignUp(unittest.TestCase):
     def test5_click_on_login(self):
         try:
             self.login.click()
-            expected_url = "http://localhost:3000/#"
+            expected_url = "https://developers.anuvaad.org/#"
             login_page = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if login_page:
                 print("SignUp==>test5_click_on_login,PASSED")

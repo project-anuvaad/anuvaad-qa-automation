@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 class Login(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r'/home/roshan/Downloads/chromedriver')
-        self.driver.get("http://localhost:3000/")
+        self.driver.get("https://developers.anuvaad.org/")
         self.driver.maximize_window()
         self.email = self.driver.find_element_by_id("email")
         self.password = self.driver.find_element_by_id("passowrd")
@@ -19,7 +19,7 @@ class Login(unittest.TestCase):
             self.email.send_keys("sajish@gmail.com")
             self.password.send_keys("Test@12")
             self.signin.click()
-            expected_url = "http://localhost:3000/view-document"
+            expected_url = "https://developers.anuvaad.org/view-document"
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
                 print("Login==>test1_login_with_correct_credentials,PASSED")
@@ -44,7 +44,7 @@ class Login(unittest.TestCase):
     def test3_click_on_forgot_password(self):
         try:
             self.forgotpwd.click()
-            expected_url = "http://localhost:3000/forgot-password#"
+            expected_url = "https://developers.anuvaad.org/forgot-password#"
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
                 print("Login==>test3_click_on_forgot_password,PASSED")
@@ -56,7 +56,7 @@ class Login(unittest.TestCase):
     def test4_click_on_sign_up(self):
         try:
             self.signup.click()
-            expected_url = "http://localhost:3000/signup#"
+            expected_url = "https://developers.anuvaad.org/signup#"
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
                 print("Login==>test4_click_on_sign_up,PASSED")
@@ -70,7 +70,7 @@ class Login(unittest.TestCase):
             self.email.send_keys("kumar.deepak@tarento.com")
             self.password.send_keys("Kd@123")
             self.signin.click()
-            expected_url = "http://localhost:3000/user-details"
+            expected_url = "https://developers.anuvaad.org/user-details"
             actual_url = WebDriverWait(self.driver, 20).until(lambda driver: driver.current_url == expected_url)
             if actual_url:
                 print("Login==>test5_login_with_admin_credentials,PASSED")
