@@ -9,5 +9,5 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 
-# Ignore node_modules folder
+# Ignore venv folder
 /venv/
