@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class ForgotPassword(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r'/home/roshan/Downloads/chromedriver')
-        self.driver.get("http://localhost:3000/forgot-password")
+        self.driver.get("https://developers.anuvaad.org/forgot-password")
         self.driver.maximize_window()
         self.email = self.driver.find_element_by_id("outlined-required")
         self.submit = self.driver.find_element_by_id("submit")
