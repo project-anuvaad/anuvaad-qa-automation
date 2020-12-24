@@ -1,2 +1,3 @@
-=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py.py";"test1_click_on_user_details"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py";"test1_click_on_user_details"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py";"test2_click_on_my_profile"),PASSED
 
