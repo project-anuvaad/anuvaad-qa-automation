@@ -4,7 +4,6 @@ import config
 
 class UserLogin:
     def __int__(self):
-        self.path = config.chrome_driver_path
         self.driver = webdriver.Chrome(config.chrome_driver_path)
         self.driver.maximize_window()
         self.driver.get(config.login_url)
@@ -18,7 +17,6 @@ class UserLogin:
 
 class AdminLogin:
     def __int__(self):
-        self.path = config.chrome_driver_path
         self.driver = webdriver.Chrome(config.chrome_driver_path)
         self.driver.maximize_window()
         self.driver.get(config.login_url)
