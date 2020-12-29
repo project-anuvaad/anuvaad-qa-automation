@@ -1,3 +1,26 @@
 =HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py";"test1_click_on_user_details"),PASSED
 =HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py";"test2_click_on_my_profile"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/AdminMenu.py";"test3_click_on_logout"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test1_create_existing_user_with_admin_role"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test2_create_existing_user_with_translator_role"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test3_create_user_with_incorrect_email"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test4_create_user_with_incorrect_password"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test5_click_on_show_password"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/CreateUser.py";"test6_click_on_reset"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/ForgotPassword.py";"test1_incorrect_email_format"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/ForgotPassword.py";"test2_correct_email_format"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/Login.py";"test1_login_with_user_credentials"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/Login.py";"test2_login_with_incorrect_credentials"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/Login.py";"test3_click_on_forgot_password"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/Login.py";"test4_click_on_sign_up"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/Login.py";"test5_login_with_admin_credentials"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/SignUp.py";"test1_new_credentials"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/SignUp.py";"test2_existing_credentials"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/SignUp.py";"test3_incorrect_email"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/SignUp.py";"test4_password_format"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/SignUp.py";"test5_click_on_login"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/UserMenu.py";"test1_click_on_translate_sentence"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/UserMenu.py";"test2_click_on_translate_document"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/UserMenu.py";"test3_click_on_my_profile"),PASSED
+=HYPERLINK("https://raw.githubusercontent.com/project-anuvaad/anuvaad-qa-automation/master/test/UserMenu.py";"test4_click_on_logout"),PASSED
 
