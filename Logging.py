@@ -3,7 +3,7 @@ import subprocess
 import os
 from os import path
 
-test = subprocess.Popen(["python", "-m", "unittest", "discover", "-s", "test", "-p", "*.py"], stdout= subprocess.PIPE)
+test = subprocess.Popen(["python", "-m", "unittest", "discover", "-s", "test", "-p", "UserMenu.py"], stdout= subprocess.PIPE)
 output = test.communicate()[0].decode('utf-8')
 
 if path.exists("TestCaseOutput.txt"):

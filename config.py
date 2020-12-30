@@ -1,4 +1,11 @@
-chrome_driver_path = "/home/roshan/Downloads/chromedriver"
+import os
+
+if os.name == 'posix':
+    chrome_driver_path = "./ChromeDriver/Linux/chromedriver"
+else:
+    chrome_driver_path = "/ChromeDriver/Windows/chromedriver.exe"
+
+
 login_url = "https://developers.anuvaad.org/"
 view_document_url = "https://developers.anuvaad.org/view-document"
 user_details_url = "https://developers.anuvaad.org/user-details"
