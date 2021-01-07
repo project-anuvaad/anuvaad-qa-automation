@@ -21,11 +21,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20)\
                 .until(lambda driver: driver.current_url == expected_user_details__url)
             if result:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),PASSED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),PASSED, By clicking the User Detail option inside the menu list, User Detail page gets loaded')
             else:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED, By clicking the User Detail option inside the menu list, User Detail page gets loaded')
         except Exception as e:
-            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED')
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test1_click_on_user_details"),FAILED, By clicking the User Detail option inside the menu list, User Detail page gets loaded')
         finally:
             self.login.driver.quit()
 
@@ -38,11 +38,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_my_profile_url)
             if result:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),PASSED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),PASSED, By clicking the Profile option inside the menu list, Profile page gets loaded')
             else:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED, By clicking the Profile option inside the menu list, Profile page gets loaded')
         except Exception as e:
-            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED')
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test2_click_on_my_profile"),FAILED, By clicking the Profile option inside the menu list, Profile page gets loaded')
         finally:
             self.login.driver.quit()
 
@@ -55,11 +55,11 @@ class AdminMenu(unittest.TestCase):
             result = WebDriverWait(self.login.driver, 20) \
                 .until(lambda driver: driver.current_url == expected_logout_url)
             if result:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),PASSED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),PASSED, By clicking the Logout option inside the menu list, user gets redirected to the Login Page')
             else:
-                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED')
+                print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED, By clicking the Logout option inside the menu list, user gets redirected to the Login Page')
         except Exception as e:
-            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED')
+            print(f'=HYPERLINK("{config.hyperlink_pretext}{os.path.basename(__file__)}";"test3_click_on_logout"),FAILED, By clicking the Logout option inside the menu list, user gets redirected to the Login Page')
         finally:
             self.login.driver.quit()
 
