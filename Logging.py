@@ -15,6 +15,6 @@ with open("TestCaseOutput.txt", 'w') as f:
         f.write(row + "\n")
 
 read_file = pd.read_csv(r'./TestCaseOutput.txt', header=None)
-read_file.columns = ['Test_Case_Name', 'Status']
+read_file.columns = ['Test_Case_Name', 'Status', 'Description']
 read_file.to_csv(r'./TestCaseOutput.csv', index=None)
 
